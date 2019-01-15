@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Video Conferencia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="title" content="Video Conferencing" />
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/vendor/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h4>Bienvenido</h4>
+            <p>Código de la Video Conferencia: <code><span id="unique-token">#123456789</span></code></p>
+            <div class="row">
+                <div class="col l8 m8 s12">
+                    <input type="text" id="conference-name" class="input-conference">
+                </div>
+                <div class="col l4 m4 s12">
+                    <button id="setup-new-room" class="waves-effect waves-light btn">Nueva Conferencia</button>
+                </div>  
+            </div>
+        </div>
+        <div class="container">
+            <div id="videos-container" class="center-align" ></div>
+        </div>
+        <!-- local/remote videos container -->
+        <!-- list of all available conferencing rooms -->
+        <div class="container">
+            <table class="col l12 s12"  id="rooms-list"></table>
+        </div>
+        
+        <script src="https://cdn.webrtc-experiment.com/firebase.js"> </script>
+        <script src="https://cdn.webrtc-experiment.com/RTCPeerConnection-v1.5.js"> </script>
+        <script src="js/conference.js"> </script>
+        <!-- script used to stylize video element -->
+        <script src="https://cdn.webrtc-experiment.com/getMediaElement.min.js"> </script>
+        <!-- code styling; below 4-scripts are useless for you! -->
+        <script src="https://cdn.webrtc-experiment.com/syntax/sh_main.min.js" type="text/javascript"> </script>
+        <script src="https://cdn.webrtc-experiment.com/syntax/sh_javascript.min.js" type="text/javascript"> </script>
+        <script src="https://cdn.webrtc-experiment.com/syntax/sh_html.min.js" type="text/javascript"> </script>
+        <script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
+    </body>
+</html>
